@@ -1,0 +1,54 @@
+.contact_us {
+    background: url("/img/contact_us.png") 50% 50% / cover no-repeat;
+}
+.page_form {
+    padding-bottom: vw(160);
+    &__in {
+        display: flex;
+        align-items: center;
+    }
+    &__left {
+        width: calc(100% - #{vw(735)});
+        margin-right: vw(30);
+        .page_form__right {
+            width: 100% !important;
+            margin-top: vw(40);
+        }
+    }
+    &__right {
+        width: vw(705);
+        padding: vw(55) vw(45);
+        background: #f4f4f4;
+        border-radius: vw(10);
+    }
+    &__title {
+        font-weight: 600;
+        font-size: vw(26);
+        line-height: vw(44);
+        margin-bottom: vw(20);
+        text-transform: uppercase;
+        color: #304150;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: vw(18);
+        line-height: vw(34);
+        color: #304150;
+        &.hasMargin {
+            margin-top: vw(30);
+        }
+    }
+    &__info {
+        font-weight: 500;
+        font-size: vw(14);
+        line-height: vw(26);
+        margin-top: vw(40);
+        color: #304150;
+    }
+    .header__phone {
+        margin-top: vw(20);
+    }
+    .product_page__reviews_form {
+        margin-top: 0;
+    }
+}

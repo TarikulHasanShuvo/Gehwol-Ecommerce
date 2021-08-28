@@ -1,0 +1,23 @@
+.sort {
+    margin-bottom: vw(35);
+    &__title {
+        font-weight: 600;
+        font-size: vw(14);
+        line-height: vw(26);
+        margin-right: vw(30);
+        color: #304150;
+    }
+    &__select {
+        select {
+            background: #ffffff;
+            border: 1px solid #dcdcdc;
+            box-sizing: border-box;
+            border-radius: vw(5);
+            padding: vw(10) vw(20);
+            font-weight: 500;
+            font-size: vw(14);
+            line-height: vw(26);
+            color: #304150;
+        }
+    }
+}

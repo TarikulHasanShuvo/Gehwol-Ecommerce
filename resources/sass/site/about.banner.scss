@@ -1,0 +1,50 @@
+.banner {
+    padding-bottom: vw(57);
+    &__in {
+        padding: vw(136) vw(612) vw(174) vw(123);
+        border-radius: vw(10);
+        background: url("/img/about_banner_bg.jpg") 50% 50% / cover no-repeat;
+        &.share {
+            background: #d8effe url("/img/share-banner_bg.jpg") 50% 50% / cover
+                no-repeat;
+        }
+        &.education {
+            background: #d8effe url("/img/education-banner_bg.jpg") 50% 50% /
+                cover no-repeat;
+            padding-top: vw(100);
+            padding-bottom: vw(122);
+            padding-right: vw(531);
+            margin-bottom: vw(97);
+        }
+    }
+    &__title {
+        font-weight: 600;
+        font-size: vw(26);
+        line-height: vw(44);
+        margin-bottom: vw(30);
+        text-transform: uppercase;
+        color: #304150;
+        &.red {
+            font-weight: bold;
+            font-size: vw(54);
+            line-height: vw(80);
+            text-transform: uppercase;
+            color: #e45a54;
+        }
+    }
+    &__text {
+        font-weight: 600;
+        font-size: vw(18);
+        line-height: vw(34);
+        color: #304150;
+        &.share {
+            font-weight: 600;
+            font-size: vw(24);
+            line-height: vw(42);
+            color: #304150;
+        }
+        span {
+            color: #e45a54;
+        }
+    }
+}

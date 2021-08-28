@@ -1,0 +1,239 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    margin: 0;
+    padding: 0;
+}
+body {
+    @media all and (max-width: 1099px) {
+        padding-top: 68px;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: vw(1520);
+    padding-right: vw(40);
+    padding-left: vw(40);
+    margin: 0 auto;
+    box-sizing: border-box;
+    @media all and (max-width: 1099px) {
+        max-width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+.container-sm {
+    width: 100%;
+    max-width: vw(1030);
+    padding-right: vw(40);
+    padding-left: vw(40);
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.d-flex {
+    display: flex;
+}
+.align-center {
+    align-items: center;
+}
+.align-start {
+    align-items: flex-start;
+}
+.justify-space-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+
+.text-right {
+    text-align: right;
+}
+.border-none {
+    border: none !important;
+}
+.button {
+    font-weight: 600;
+    font-size: vw(16);
+    line-height: vw(28);
+    padding: vw(20) vw(38);
+    border-radius: vw(5);
+    box-sizing: border-box;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    &.button_primary {
+        background-color: #0152b1;
+        color: #fff;
+    }
+    &.button_secondary {
+        background-color: #e45a54;
+        color: #fff;
+        border: none;
+    }
+    &.button_light {
+        background-color: #d8effe;
+        color: #304150;
+    }
+    &.button_grey {
+        background-color: #a5a5a5;
+        color: #ffffff;
+    }
+    &.button_outlied {
+        border: 1px solid #e45a54;
+        box-sizing: border-box;
+        color: #304150;
+    }
+    &.button_outlined_white {
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        color: #fff;
+    }
+    &.button_small {
+        font-size: vw(12);
+        padding: vw(10) vw(20);
+    }
+    &.isLoading {
+        color: transparent !important;
+        background-image: url("/img/svg/loader.svg");
+        background-size: 40% 80%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+}
+.w-60 {
+    width: 60%;
+}
+
+.position-relative {
+    position: relative;
+}
+
+/* Slider */
+.slick-slider {
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus {
+    outline: none;
+}
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after {
+    display: table;
+
+    content: "";
+}
+.slick-track:after {
+    clear: both;
+}
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir="rtl"] .slick-slide {
+    float: right;
+}
+.slick-slide img {
+    display: block;
+}
+.slick-slide.slick-loading img {
+    display: none;
+}
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+.slick-initialized .slick-slide {
+    display: block;
+}
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+.slick-vertical .slick-slide {
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.text-decoration-none {
+    text-decoration: none !important;
+}
+
+.review_modal_close {
+  position: absolute;
+  top: 0.78125vw;
+  right: 0.78125vw;
+  width: 1.1458333333vw;
+  cursor: pointer;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}

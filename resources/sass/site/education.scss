@@ -1,0 +1,180 @@
+.education_page {
+    padding-bottom: vw(120);
+}
+.calendar {
+    &__title {
+        font-weight: 600;
+        font-size: vw(26);
+        line-height: vw(44);
+        margin-bottom: vw(30);
+        text-transform: uppercase;
+        color: #304150;
+    }
+    &__filter {
+        margin-bottom: vw(30);
+    }
+    &__filter_item {
+        &:not(:last-child) {
+            margin-right: vw(69);
+        }
+        .text {
+            font-weight: 600;
+            font-size: vw(14);
+            line-height: vw(26);
+            margin-right: vw(25);
+            color: #304150;
+        }
+        select {
+            height: vw(44);
+            padding: 0 vw(20);
+            box-sizing: border-box;
+            outline: none;
+            border-radius: vw(5);
+            border: 1px solid #bebebe;
+            transition: border-color 0.3s ease;
+            font-weight: 500;
+            font-size: vw(14);
+            line-height: vw(26);
+            color: #304150;
+            &:focus {
+                border-color: #304150;
+            }
+        }
+    }
+    &__week {
+        display: flex;
+        padding: vw(18) vw(20) vw(14);
+        border: 1px solid #bebebe;
+        border-bottom: none;
+        box-sizing: border-box;
+        border-radius: vw(10) vw(10) 0px 0px;
+    }
+    &__week_day {
+        width: calc(100% / 7);
+        font-weight: 600;
+        font-size: vw(16);
+        line-height: vw(28);
+        text-transform: uppercase;
+        color: #a5a5a5;
+    }
+    &__body {
+        border-bottom: 1px solid #bebebe;
+        border-right: 1px solid #bebebe;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__item {
+        width: calc(100% / 7);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        border-top: 1px solid #bebebe;
+        border-left: 1px solid #bebebe;
+        padding: vw(10) vw(20) vw(14);
+        text-decoration: none;
+        &:not(.is_disabled) {
+            cursor: pointer;
+            &:hover {
+                background: #0075e8;
+            }
+        }
+        &.is_disabled {
+            cursor: not-allowed;
+            background: #f4f4f4;
+        }
+    }
+    &__item_top {
+        margin-bottom: vw(36);
+        .date {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: vw(20);
+            .left {
+                font-weight: 600;
+                font-size: vw(34);
+                line-height: vw(58);
+                color: #304150;
+            }
+            .right {
+                width: vw(72);
+                font-weight: 500;
+                font-size: vw(12);
+                line-height: vw(20);
+                text-align: right;
+                color: #0152b1;
+            }
+        }
+        .text {
+            font-weight: 600;
+            font-size: vw(14);
+            line-height: vw(26);
+            color: #304150;
+        }
+    }
+    &__item_bottom {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .time {
+            display: flex;
+            align-items: flex-start;
+            .icon {
+                width: vw(15);
+                margin-right: vw(10);
+                padding-top: vw(10);
+                font-size: 0;
+            }
+            .text {
+                font-weight: 500;
+                font-size: vw(12);
+                line-height: vw(20);
+                color: #a5a5a5;
+            }
+        }
+        .arrow {
+            padding-top: vw(10);
+            width: vw(27);
+        }
+    }
+    &__item.is_disabled &__item_top .date .left {
+        color: #dcdcdc;
+    }
+    &__item:not(.is_disabled):hover {
+        .date *,
+        .time,
+        .text,
+        .arrow {
+            color: #fff !important;
+            svg {
+                fill: #fff !important;
+            }
+        }
+    }
+}
+.education_event {
+    .cart__left_shipping_form {
+        margin-bottom: 0;
+    }
+    .cart__left_buttons {
+        margin-top: vw(10);
+    }
+    &__subtitle {
+        font-weight: 600;
+        font-size: vw(18);
+        line-height: vw(34);
+        color: #0152b1;
+    }
+    &__total {
+        margin-top: vw(35);
+        padding-top: vw(25);
+        border-top: 1px solid #dcdcdc;
+        .cart__right_total:not(:last-child) {
+            padding-bottom: 11px;
+        }
+        .cart__right_total:last-child {
+            padding-bottom: 0;
+        }
+    }
+}

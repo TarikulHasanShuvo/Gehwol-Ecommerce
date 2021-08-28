@@ -1,0 +1,85 @@
+.about_catalog {
+    padding: vw(57) 0 vw(115);
+    &__in {
+    }
+    &__left {
+        width: vw(702);
+        position: relative;
+        img {
+            position: relative;
+            z-index: 2;
+        }
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            left: vw(-229);
+            width: vw(750);
+            height: vw(640);
+            background: url("/img/water3.png") 50% 50% / cover no-repeat;
+        }
+    }
+    &__right {
+        width: calc(100% - #{vw(702)} - #{vw(96)});
+        margin-left: vw(96);
+    }
+    &__title {
+        font-weight: 600;
+        font-size: vw(26);
+        line-height: vw(44);
+        margin-bottom: vw(10);
+        text-transform: uppercase;
+        color: #304150;
+    }
+    &__text {
+        font-weight: 500;
+        font-size: vw(18);
+        line-height: vw(34);
+        margin-bottom: vw(40);
+        color: #304150;
+    }
+    &__list {
+        margin-bottom: vw(50);
+        &.small {
+            width: 60%;
+            padding-bottom: vw(80);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        li {
+            width: 50%;
+            &.small {
+                width: vw(368);
+            }
+            &:nth-child(n + 3) {
+                margin-top: vw(10);
+            }
+        }
+        a {
+            display: block;
+            font-weight: 500;
+            font-size: vw(18);
+            line-height: vw(36);
+            text-decoration: none;
+            color: #e45a54;
+        }
+    }
+    &__info {
+        &,
+        a {
+            font-weight: 500;
+            font-size: vw(12);
+            line-height: vw(20);
+            text-decoration: none;
+            color: #a5a5a5;
+        }
+    }
+}

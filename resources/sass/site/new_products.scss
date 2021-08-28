@@ -1,0 +1,159 @@
+.new_products {
+    padding: vw(80) 0;
+    &__title {
+        font-weight: 600;
+        font-size: vw(26);
+        line-height: vw(44);
+        margin-bottom: vw(35);
+        text-transform: uppercase;
+        color: #304150;
+    }
+    &__latest {
+        width: vw(558);
+        background: #0075e8;
+        margin-right: vw(15);
+        border-radius: vw(5);
+        padding: vw(50) vw(20) vw(60) vw(50);
+        box-sizing: border-box;
+        display: flex;
+        overflow: hidden;
+    }
+    &__latest_left {
+        height: 100%;
+        width: vw(300);
+        margin-right: vw(25);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        .title {
+            font-weight: 800;
+            font-size: vw(32);
+            line-height: vw(50);
+            margin-bottom: vw(26);
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+        .subtitle {
+            font-weight: 600;
+            font-size: vw(18);
+            line-height: vw(34);
+            color: #ffffff;
+        }
+    }
+    &__latest_right {
+        max-height: vw(300);
+        width: calc(100% - #{vw(325)});
+    }
+    &__items {
+        font-size: 0;
+        margin: 0 vw(-15) 0 0;
+        width: calc(100% - #{vw(558)});
+        position: static !important;
+        * {
+            outline: none !important;
+        }
+        .slick-arrow {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            z-index: 2;
+            border: none;
+            background: url("/img/svg/arrow.svg") 50% 50%/100% auto no-repeat;
+            cursor: pointer;
+            &.slick-prev {
+                left: vw(-100);
+                transform: rotateY(180deg);
+            }
+            &.slick-next {
+                right: vw(-100);
+            }
+        }
+        .slick-dots {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: vw(-60);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                &:not(:last-child) {
+                    margin-right: vw(11);
+                }
+                button {
+                    font-size: 0;
+                    border: none;
+                    padding: 0;
+                    margin: 0;
+                    width: vw(5);
+                    height: vw(5);
+                    border-radius: 50%;
+                    background: #dcdcdc;
+                    cursor: pointer;
+                }
+                &.slick-active button {
+                    background: #a5a5a5;
+                }
+            }
+        }
+    }
+    &__item {
+        width: calc(100% - #{vw(30)}) !important;
+        margin: 0 vw(15);
+    }
+    &__item_image {
+        border-radius: vw(5);
+        overflow: hidden;
+        margin-bottom: vw(25);
+    }
+    &__item_name {
+        font-weight: 600;
+        font-size: vw(14);
+        line-height: vw(26);
+        margin-bottom: vw(15);
+        color: #304150;
+    }
+    &__item_stars {
+        width: vw(86);
+        height: vw(16);
+        position: relative;
+        background: url("/img/svg/star.svg") 0 50% / vw(17) repeat-x;
+    }
+    &__item_stars_in {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: url("/img/svg/star_filled.svg") 0 50% / vw(17) repeat-x;
+    }
+    &__item_raiting {
+        margin-left: vw(19);
+        font-size: vw(12);
+        line-height: vw(20);
+        font-weight: 500;
+        color: #a5a5a5;
+    }
+    &__item_price {
+        font-weight: 600;
+        font-size: vw(20);
+        line-height: vw(32);
+        margin-top: vw(13);
+        color: #304150;
+    }
+    &__item_buttons {
+        margin-top: vw(20);
+        .button_secondary {
+            flex: 1 1 auto;
+            text-align: center;
+        }
+        .button_outlied {
+            width: vw(118);
+            margin-right: vw(15);
+            text-align: center;
+        }
+    }
+}

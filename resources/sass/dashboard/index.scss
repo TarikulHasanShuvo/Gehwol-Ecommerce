@@ -1,0 +1,107 @@
+.dashboard {
+    display: flex;
+    align-items: flex-start;
+    padding-top: vw(70);
+    padding-bottom: vw(120);
+    &__left {
+        width: vw(291);
+        margin-right: vw(77);
+    }
+    &__right {
+        width: calc(100% - #{vw(268)});
+    }
+    &__title {
+        font-weight: 600;
+        font-size: vw(26);
+        line-height: vw(44);
+        text-transform: uppercase;
+        color: #304150;
+    }
+    &__menu {
+        margin-top: vw(25);
+        ul {
+            margin: 0;
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            border-top: 1px solid #dcdcdc;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            padding: vw(12) vw(3);
+            svg {
+                transition: all 0.3s ease;
+            }
+            .icon {
+                width: vw(17);
+                font-size: 0;
+            }
+            .text {
+                margin-left: vw(19);
+                width: calc(100% - #{vw(36)});
+                font-weight: 500;
+                font-size: vw(18);
+                line-height: vw(36);
+                color: #304150;
+                transition: all 0.3s ease;
+            }
+            &.active,
+            &:hover {
+                svg {
+                    fill: #e45a54;
+                }
+                .text {
+                    color: #e45a54;
+                }
+            }
+        }
+    }
+    &__form {
+        margin-bottom: 0 !important;
+        margin-top: vw(30);
+    }
+    &__divider {
+        height: 1px;
+        background: #dcdcdc;
+        &.first {
+            margin-top: vw(25);
+        }
+        &.second {
+            margin-top: vw(50);
+            margin-bottom: vw(35);
+        }
+    }
+    &__form_buttons {
+        padding-top: vw(10);
+    }
+    &__form_button {
+        button {
+            border: none;
+        }
+    }
+    &__form_link {
+        font-weight: 500;
+        font-size: vw(14);
+        line-height: vw(26);
+        margin-left: vw(40);
+        text-decoration: none;
+        color: #e45a54;
+    }
+    &__clear {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: vw(20);
+        padding-bottom: vw(25);
+        a {
+            font-weight: 600;
+            font-size: vw(12);
+            line-height: vw(20);
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #a5a5a5;
+        }
+    }
+}

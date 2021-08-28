@@ -1,0 +1,21 @@
+.info {
+    &__in {
+        display: flex;
+        align-items: center;
+        padding: vw(20) vw(56);
+        border-top: 1px solid #DCDCDC;
+        border-bottom: 1px solid #DCDCDC;
+    }
+    &__icon {
+        width: vw(94);
+    }
+    &__text {
+        width: calc(100% - #{vw(94)} - #{vw(61)});
+        margin-left: vw(61);
+        font-weight: 500;
+        font-size: vw(24);
+        line-height: vw(42);
+        text-transform: uppercase;
+        color: #304150;
+    }
+}

@@ -1,0 +1,51 @@
+@import "./helpers/variables";
+@import "./helpers/mixins";
+@import "./helpers/functions";
+@import "./vendor/libs";
+@import "./base/fonts";
+@import "./base/general";
+
+body {
+    margin: 0;
+}
+.wrapper {
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: vw(100) vw(480) vw(100) vw(849);
+    background: url("/img/error_page_bg.png") 50% 50% / cover no-repeat;
+}
+.error_page {
+    &__title {
+        font-weight: 600;
+        font-size: vw(32);
+        line-height: vw(54);
+        margin-bottom: vw(15);
+        color: #e45a54;
+    }
+    &__message {
+        font-weight: bold;
+        font-size: vw(60);
+        line-height: vw(80);
+        margin-bottom: vw(40);
+        text-transform: uppercase;
+        color: #304150;
+    }
+    &__text {
+        font-weight: 600;
+        font-size: vw(24);
+        line-height: vw(42);
+        margin-bottom: vw(45);
+        color: #304150;
+    }
+    &__buttons {
+        .button {
+            &:not(:last-child) {
+                margin-right: vw(30);
+            }
+        }
+    }
+}

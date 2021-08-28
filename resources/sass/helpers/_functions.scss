@@ -1,0 +1,8 @@
+@function vw($px) {
+    $vwSize: $px * 100 / 1920;
+    @return #{$vwSize}vw;
+}
+
+@function rem($px) {
+    @return ($px / 16) + rem;
+}

@@ -1,0 +1,114 @@
+.auth_page {
+    position: relative;
+    padding-top: vw(153);
+    padding-bottom: vw(70);
+    background: url("/img/auth_page_bg.png") 50% 50% / cover no-repeat;
+    overflow: hidden;
+    &__accessuar {
+        position: absolute;
+        &.first {
+            width: vw(188);
+            top: vw(-700);
+            right: vw(136);
+            transform: rotate(135deg);
+        }
+        &.second {
+            width: vw(75);
+            top: vw(-700);
+            right: vw(72);
+            transform: rotate(-200deg);
+        }
+        &.third {
+            width: vw(117);
+            top: vw(-700);
+            right: vw(-32);
+            transform: rotate(400deg);
+        }
+        &.fourth {
+            width: vw(68);
+            top: vw(-700);
+            left: vw(121);
+            transform: rotate(400deg);
+        }
+        &.fiveth {
+            width: vw(277);
+            top: vw(-700);
+            left: vw(-124);
+            transform: rotate(-380deg);
+        }
+    }
+    &__in {
+        display: flex;
+        align-items: flex-start;
+    }
+    &__left {
+        width: calc(100% - #{vw(798)});
+    }
+    &__right {
+        padding-right: vw(14);
+        width: vw(736);
+        margin-left: vw(62);
+        box-sizing: border-box;
+        position: relative;
+        z-index: 2;
+        transform: translateY(#{vw(-700)});
+        transform-origin: 50% 50%;
+    }
+    &__links {
+        margin-bottom: vw(30);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__link {
+        font-weight: 600;
+        font-size: vw(26);
+        line-height: vw(44);
+        text-transform: uppercase;
+        color: #a5a5a5;
+        text-decoration: none;
+        &.active {
+            color: #0152b1;
+        }
+        &:not(:last-child) {
+            margin-right: vw(50);
+        }
+    }
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span {
+            font-weight: 500;
+            font-size: vw(12);
+            line-height: vw(20);
+            color: #304150;
+        }
+    }
+    &__forgot {
+        font-weight: 500;
+        font-size: vw(12);
+        line-height: vw(20);
+        text-decoration: none;
+        color: #a5a5a5;
+    }
+    &__button {
+        display: flex;
+        justify-content: center;
+        button {
+            border: none;
+        }
+    }
+    &__privacy {
+        text-align: center;
+        margin-top: vw(130);
+        font-weight: 500;
+        font-size: vw(12);
+        line-height: vw(20);
+        color: #a5a5a5;
+        a {
+            color: #304150;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.dashboard {
+    &__wishlist_product {
+        width: 25%;
+        &:nth-child(n + 5) {
+            margin-top: vw(50);
+        }
+    }
+    .catalog_products__pages {
+        a {
+            &.disabled {
+                pointer-events: none;
+                cursor: not-allowed;
+                opacity: 0.5;
+            }
+            &.active {
+                color: #000000;
+            }
+        }
+    }
+}

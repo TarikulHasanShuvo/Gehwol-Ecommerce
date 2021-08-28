@@ -1,0 +1,48 @@
+.catalog_products {
+    padding: 0 0 vw(120) 0;
+    &__in {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin: 0 vw(-15) vw(65);
+    }
+    &__item {
+        width: 20%;
+        &:nth-child(n + 6) {
+            margin-top: vw(50);
+        }
+    }
+    &__pages {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .arrow {
+            display: block;
+            width: vw(12);
+            padding: 0 vw(30);
+            font-size: 0;
+            &.prev {
+                transform: rotateY(180deg);
+            }
+        }
+        .page {
+            font-weight: 600;
+            font-size: vw(16);
+            line-height: vw(32);
+            text-decoration: none;
+            padding: 0 vw(15);
+        }
+        a.page {
+            color: #a5a5a5;
+        }
+    }
+
+    .no-product {
+        width : 100%;
+        display: block;
+        h1{
+            text-align: center;
+            color: gray;
+        }
+    }
+}
